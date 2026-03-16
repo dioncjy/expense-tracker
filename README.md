@@ -22,11 +22,12 @@ From the `backend` folder:
 
 ```bash
 cd backend
+go mod download
 go run ./cmd/api
 ```
 
 - Server listens on `http://localhost:8080`.
-- Uses `expense-tracker.db` in the project root by default.
+- Uses `backend/expense-tracker.db` by default (when run from the `backend/` folder).
 - You can override the DB path with:
 
 ```bash
